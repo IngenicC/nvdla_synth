@@ -512,7 +512,7 @@
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>core_port_dla_core_clock</spirit:name>
+      <spirit:name>core_port_dla_core_clk</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
       <spirit:slave/>
@@ -522,19 +522,19 @@
             <spirit:name>CLK</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>core_port_dla_core_clock</spirit:name>
+            <spirit:name>core_port_dla_core_clk</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CORE_PORT_DLA_CORE_CLOCK.ASSOCIATED_BUSIF">M00_axi</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CORE_PORT_DLA_CORE_CLK.ASSOCIATED_BUSIF">M00_axi</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>core_port_dla_csb_clock</spirit:name>
+      <spirit:name>core_port_dla_csb_clk</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
       <spirit:slave/>
@@ -544,14 +544,14 @@
             <spirit:name>CLK</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>core_port_dla_csb_clock</spirit:name>
+            <spirit:name>core_port_dla_csb_clk</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CORE_PORT_DLA_CSB_CLOCK.ASSOCIATED_BUSIF">S00_axi</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CORE_PORT_DLA_CSB_CLK.ASSOCIATED_BUSIF">S00_axi</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -611,7 +611,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7520f733</spirit:value>
+            <spirit:value>69274102</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -627,7 +627,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7520f733</spirit:value>
+            <spirit:value>69274102</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -641,7 +641,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>cc3aff78</spirit:value>
+            <spirit:value>2d8fb618</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -662,7 +662,7 @@
     </spirit:views>
     <spirit:ports>
       <spirit:port>
-        <spirit:name>core_port_dla_core_clock</spirit:name>
+        <spirit:name>core_port_dla_core_clk</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -675,7 +675,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>core_port_dla_csb_clock</spirit:name>
+        <spirit:name>core_port_dla_csb_clk</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -3837,13 +3837,13 @@
     <spirit:fileSet>
       <spirit:name>xilinx_testbench_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/hw/include/simulate_x_tick.vh</spirit:name>
+        <spirit:name>src/hw/include/NV_HWACC_NVDLA_tick_defines.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/hw/include/NV_HWACC_NVDLA_tick_defines.vh</spirit:name>
+        <spirit:name>src/hw/include/simulate_x_tick.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
@@ -3895,20 +3895,25 @@
       </xilinx:taxonomies>
       <xilinx:displayName>NvdlaAXIWrapper_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-08-25T15:16:17Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2018-08-26T13:55:26Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="nopcore"/>
-        <xilinx:tag xilinx:name="user.org:user:NvdlaAXIWrapper:1.0_ARCHIVE_LOCATION">/home/ubuntu/projects/nvdla_small_zynq/nvdla_synth/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="user.org:user:NvdlaAXIWrapper:1.0_ARCHIVE_LOCATION">/home/ubuntu/projects/nvdla_small_zynq/nvdla_synth/zc706/ip</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="e62839e2"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="f362ede8"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="842cc4b9"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="a955c827"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6345f815"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="41447b79"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="db912d6f"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="07e1b6b6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="139919a1"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
